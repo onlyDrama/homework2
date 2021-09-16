@@ -46,7 +46,7 @@ int main()
     
         if (n == 3)
         {
-            int x, y, b;
+            double x, y, b;
             cout << "\nВведите x: " << endl;
             cin >> x;
             cout << "\nВведиту y: " << endl;
@@ -87,12 +87,7 @@ int main()
         }
     }
     
-    /*
-    double x;
-    cin >> x;
-    x = fabs(x);
-    cout << n2(x, 10);
-    */
+   
 
   
     return 0;
