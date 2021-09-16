@@ -21,28 +21,29 @@ int main()
     while (n != 0) 
     {
         cin >> n;
-        /*
+        
         if (n == 2)
         {
-            int x, a;
+            double x, a;
             cout << "\nВведите число x: ";
             cin >> x;
             cout << "\nВведите число a: ";
             cin >> a;
 
-            if (n2(x, a) == 404)
+            
+            if (n2(x,a) == 404)
             {
-                cout << getError();
-                cout << endl;
-                
+                cout << getError() << endl;;
+            }
+            else
+            {
+                cout << "\nРезультат :" << n2(x, a) << endl;
             }
             
-            cout << "\nРезультат :" << n2(x, a);
-
            
             
         }
-    */
+    
         if (n == 3)
         {
             int x, y, b;
