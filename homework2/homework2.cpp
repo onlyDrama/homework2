@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 
+
 using namespace std;
 int main()
 {
@@ -20,7 +21,7 @@ int main()
     while (n != 0) 
     {
         cin >> n;
-
+        /*
         if (n == 2)
         {
             int x, a;
@@ -29,19 +30,19 @@ int main()
             cout << "\nВведите число a: ";
             cin >> a;
 
-            /*if (n2(x, a) == 404)
+            if (n2(x, a) == 404)
             {
                 cout << getError();
                 cout << endl;
                 
             }
-            */
+            
             cout << "\nРезультат :" << n2(x, a);
 
            
             
         }
-
+    */
         if (n == 3)
         {
             int x, y, b;
