@@ -29,7 +29,7 @@ double n2(double x, double a)
 				return 404;
 
 			}
-			else if (x >= pow(a, 2))
+			else if (fabs(x) >= 1)
 			{
 				w = sqrt((a - pow(x, 2)));
 				return w;
