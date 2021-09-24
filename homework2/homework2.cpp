@@ -2,8 +2,8 @@
 #include "N3.h"
 #include "N4.h"
 #include "N5.h"
-#include "Log.h"
 #include <cmath>
+#include "Log.h"
 #include <iostream>
 #include <string>
 #include "ErrorL.h"
@@ -18,7 +18,8 @@ int main()
     int n = 1000; // номер задания
     cout << "Домашнее задание 2" << endl;
     cout << "0 - конец программы" << endl;
-    cout << getError_with_recomendation(2);
+    
+
     
     while (n != 0) 
     {
@@ -42,8 +43,6 @@ int main()
             {
                 cout << "\nРезультат :" << n2(x, a) << endl;
             }
-            
-           
             
         }
     
@@ -86,7 +85,6 @@ int main()
 
 
             }
-            
         }
     }
 

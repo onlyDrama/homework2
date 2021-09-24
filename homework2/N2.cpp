@@ -12,7 +12,7 @@ double n2(double x, double a)
 		if (fabs(x) < 1)
 		{
 			x = fabs(x);
-			w = a * logbase(x, 10); // logbase - лошарифм по основанию x
+			w = a * log(x); // натуральный логарифм
 
 			return  w;
 		}
@@ -23,7 +23,7 @@ double n2(double x, double a)
 			{
 				return ERRORCONST;
 			}
-			else if (fabs(x) >= 1)
+			if (fabs(x) >= 1)
 			{
 				w = sqrt((a - pow(x, 2)));
 				return w;
