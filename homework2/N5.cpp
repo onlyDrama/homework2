@@ -1,4 +1,5 @@
 #include <cmath>
+#include "ERRORCONST.h"
 double n5(double x)
 {
 
@@ -10,6 +11,6 @@ double n5(double x)
 	}
 	else
 	{
-		return 404;
+		return ERRORCONST;
 	}
 }

@@ -1,33 +1,27 @@
 #include "Log.h"
 #include <cmath>
-#include <math.h>
+#include "ERRORCONST.h"
 using namespace std;
 
 double n2(double x, double a)
 {
-	double w;
+	double w = 1;
 
 	if (x != 0)
 	{
-
-
 		if (fabs(x) < 1)
 		{
+			x = fabs(x);
+			w = a * logbase(x, 10); // logbase - лошарифм по основанию x
 
-			w = a * logbase(fabs(x), 10); // logbase - лошарифм по основанию x
 			return  w;
-
-
 		}
-
-
+		
 		if (fabs(x) >= 1)
 		{
-
 			if (a - pow(x, 2) < 0)
 			{
-				return 404;
-
+				return ERRORCONST;
 			}
 			else if (fabs(x) >= 1)
 			{
@@ -36,9 +30,10 @@ double n2(double x, double a)
 			}
 		}
 	}
+
 	else
 	{
-		return 404;
+		return ERRORCONST;
 	}
 	
 }

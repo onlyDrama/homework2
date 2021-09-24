@@ -3,21 +3,23 @@
 #include "N4.h"
 #include "N5.h"
 #include "Log.h"
-#include "Error.h"
-#include <math.h>
+#include <cmath>
 #include <iostream>
 #include <string>
-
-
+#include "ErrorL.h"
+#include "ERRORCONST.h"
 using namespace std;
+
+
 int main()
 {
-    
     setlocale(LC_ALL, "ru");
-    
+
     int n = 1000; // номер задания
     cout << "Домашнее задание 2" << endl;
     cout << "0 - конец программы" << endl;
+    cout << getError_with_recomendation(2);
+    
     while (n != 0) 
     {
         cin >> n;
@@ -30,8 +32,9 @@ int main()
             cout << "\nВведите число a: ";
             cin >> a;
 
-            
-            if (n2(x,a) == 404)
+            cout << "Модуль x: " << fabs(x) << " " << "Модуль a: " << fabs(a) << endl;
+
+            if (n2(x,a) == ERRORCONST)
             {
                 cout << getError() << endl;;
             }
@@ -54,11 +57,11 @@ int main()
             cout << "\nВведите b: " << endl;
             cin >> b;
 
-            if (n3(x, y, b) == 404)
+            if (n3(x, y, b) == ERRORCONST)
             {
                 cout << getError();
             }
-            if (n3(x, y, b) != 404)
+            if (n3(x, y, b) != ERRORCONST)
             {
                 cout << "Результат :" << n3(x, y, b);
                 cout << endl;
@@ -86,10 +89,7 @@ int main()
             
         }
     }
-    
-   
 
-  
     return 0;
 
 }
