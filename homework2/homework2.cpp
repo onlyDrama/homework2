@@ -6,7 +6,6 @@
 #include "Log.h"
 #include <iostream>
 #include <string>
-#include "ErrorL.h"
 #include "ERRORCONST.h"
 using namespace std;
 
@@ -37,7 +36,7 @@ int main()
 
             if (n2(x,a) == ERRORCONST)
             {
-                cout << getError() << endl;;
+                cout << 404 << endl;;
             }
             else
             {
@@ -58,7 +57,7 @@ int main()
 
             if (n3(x, y, b) == ERRORCONST)
             {
-                cout << getError();
+                cout << 404;
             }
             if (n3(x, y, b) != ERRORCONST)
             {
